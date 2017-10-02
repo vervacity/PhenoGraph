@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import numpy as np
 from phenograph.core import find_neighbors, neighbor_graph, jaccard_kernel
 import scipy.sparse as sp
@@ -42,7 +44,7 @@ def random_walk_probabilities(A, labels):
         vals = [sp.linalg.isolve.bicgstab(Lu, b.T.todense()) for b in B.T]
         warnings = [x[1] for x in vals]
         if any(warnings):
-            print("Warning: iterative solver failed to converge in at least one case", flush=True)
+            print("Warning: iterative solver failed to converge in at least one case")
         P = normalize(np.vstack(tuple((x[0] for x in vals))).T, norm='l1')
 
     else:

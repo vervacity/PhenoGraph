@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 import sys
 
 
-if sys.version_info.major != 3:
-    raise RuntimeError("PhenoGraph requires Python 3")
+#if sys.version_info.major != 3:
+#    raise RuntimeError("PhenoGraph requires Python 3")
 
 setup(
     name="PhenoGraph",

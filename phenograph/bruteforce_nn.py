@@ -5,6 +5,7 @@ via scipy.spatial.distance.cdist and multiprocessing.Pool
 psutil is used to evaluate available memory and minimize the number
 of parallel jobs for the available resources
 """
+from __future__ import print_function
 
 import numpy as np
 from scipy.spatial.distance import cdist
