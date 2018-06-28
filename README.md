@@ -1,4 +1,4 @@
-PhenoGraph for Python3
+PhenoGraph for Python2
 ======================
 
 [PhenoGraph](http://www.cell.com/cell/abstract/S0092-8674(15)00637-6) is a clustering method designed for 
